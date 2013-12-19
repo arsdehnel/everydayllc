@@ -1,0 +1,63 @@
+// BREADCRUMBS
+// -----------
+
+#breadcrumb_wrapper {
+	margin: 8px;
+	border: 1px solid #ddd;
+	.border-radius(3px);
+	.box-shadow(inset 0 1px 0 @white);	
+	position: relative;
+	#gradient > .vertical(@white, #eee);
+	h1{
+		font-size: 24px;
+		margin: 0;
+		padding: 0 8px;
+		font-family: 'Mate SC';
+		img{
+			margin: 6px 10px 6px 2px;
+		}
+	}
+	.breadcrumb {
+	  padding: 7px 14px;
+	  margin: 0;
+	  list-style: none;
+	  border-bottom: 1px solid #ddd;
+	  .border-radius(3px);
+	  .box-shadow(inset 0 1px 0 @white);
+	  li {
+	    display: inline-block;
+	    .ie7-inline-block();
+	    text-shadow: 0 1px 0 @white;
+	  }
+	  .divider {
+	    padding: 0 5px;
+	    color: @grayLight;
+	  }
+	  .active a {
+	    color: @grayDark;
+	  }
+	}
+	.subnav_wrapper{
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		margin: 0;
+		border: 0;
+	}
+	
+	.nav-tabs{
+		margin-right: 12px;
+	}
+	
+	.nav-tabs > li > a,
+	.nav-pills > li > a {
+		border: 1px solid #ccc;
+		border-bottom: 0;
+		.border-radius-top(5px);
+		padding-right: 5px;
+		padding-left: 5px;
+		margin-right: 5px;
+		line-height: 10px; // keeps the overall height an even number
+	}
+
+}

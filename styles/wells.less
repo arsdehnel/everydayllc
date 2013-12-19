@@ -1,0 +1,61 @@
+// WELLS
+// -----
+
+.well {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: lighten(@main_light, 20%);
+  border: 1px solid #eee;
+  border: 1px solid rgba(0,0,0,.05);
+  .border-radius(4px);
+  .box-shadow(inset 0 1px 1px rgba(0,0,0,.05));
+  blockquote {
+    border-color: #ddd;
+    border-color: rgba(0,0,0,.15);
+  }
+  .well-title {
+	background-color: #331306;
+	color: #ffc984;
+	padding: 6px 6px 2px;
+	margin: -19px -19px 12px;
+	font-size: 12px;
+	font-weight: bold;
+	min-height: 22px;
+	.border-radius-top( 4px );
+	position: relative;
+	
+	.well-title-clear-link{
+		position: absolute; 
+		bottom: 5px;
+		right: 6px;
+		color: #eee;
+		font-weight: normal;
+		font-size: 11px;
+	}
+  
+  }
+  .well-title-note{
+  	background-color: #eee;
+  	padding: 2px;
+  	font-size: 9px;
+  	font-style: italic;
+	margin: -6px -9px 12px;
+	line-height: 13px;
+	text-align: center;
+  }
+}
+
+// Sizes
+.well-large {
+  padding: 24px;
+  .border-radius(6px);
+}
+.well-small {
+  padding: 9px;
+  .border-radius(3px);
+  .well-title {
+	margin: -9px -10px 6px;
+	.border-radius-top( 3px );
+  }
+}
